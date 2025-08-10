@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Mobi Shop</title>
+    <header>
+        <h1>Mobi Shop</h1>
+        <p>Welcome to Mobi Shop! Please fill out the form below to register.</p>
+    </header>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section>
+
+    <h2>Our Products</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Number</th>
+                <th>Product Category</th>
+                <th>Product Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Electronics</td>
+                <td>Smartphones
+                    <ul>
+                        <li>
+                            <p>Samsung Galaxy S21
+                                
+                            </p>
+                            <img src="https://phonesstorekenya.com/wp-content/uploads/2021/01/Samsung-Galaxy-S21-5G.jpg.webp" width="60" height="60" alt="Samsung-Galaxy-S21-5G" Galaxy S21</li>
+                        <li>
+                            <p>Infinix Zero 8</p>
+                            <img src="https://phonesstorekenya.com/wp-content/uploads/2020/08/Infinix-Zero-8.jpg.webp" width="60" height="60" alt="Infinix-Zero-8" Infinix Zero 8</li>
+                        <li>
+                            <p>Apple iPhone 13</p>
+                            <img src="https://phonesstorekenya.com/wp-content/uploads/2021/09/iPhone-13-Pro-c.jpg" width="60" height="60" alt="Apple-iPhone-13" Apple iPhone 13</li>
+                        <li>
+                            <p>OnePlus Nord CE4 Lite</p>
+                            <img src="https://phonesstorekenya.com/wp-content/uploads/2024/06/OnePlus-Nord-CE4-Lite.jpg" width="60" height="60" alt="OnePlus-Nord-CE4-Lite" OnePlus Nord CE4 Lite</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Accessories</td>
+                <td>Mobile Accessories
+                    <ul>
+                        <li>
+                            <p>Wireless Charger</p>
+                            <img src="https://www.phoneplacekenya.com/wp-content/uploads/2024/04/Samsung-wireless-charger-convertible-9w.jpg" width="60" height="60" alt="Wireless-Charger" Wireless Charger</li>
+                        <li>
+                            <p>Phone Case</p>
+                            <img src="https://unblast.com/wp-content/uploads/2023/11/iPhone-15-Pro-Case-Mockup-1024x682.jpg" width="60" height="60" alt="Phone-Case" Phone Case</li>
+                        <li>
+                            <p>Bluetooth Headphones</p>
+                            <img src="https://unblast.com/wp-content/uploads/2019/06/Head-Phone-Mockup-1-1024x768.jpg" width="60" height="60" alt="Bluetooth-Headphones" Bluetooth Headphones</li>
+                        <li>
+                            <p>Screen Protector</p>
+                            <img src="https://www.phoneplacekenya.com/wp-content/uploads/2021/07/Samsung-3D-Screen-Protector.jpg" width="60" height="60" alt="Screen-Protector" Screen Protector</li>
+                    </ul>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Kitchenware</td>
+                <td>Kitchenware Products
+                    <ul>
+                        <li>
+                            <p>Cookware Set</p>
+                            <img src="https://www.rossetticasalinghi.com/ke/wp-content/uploads/2020/05/limited-edition2-600x600.jpg" width="60" height="60" alt="Cookware-Set" Cookware Set</li>
+                        <li>
+                            <p>Blender</p>
+                            <img src="https://hotpoint.co.ke/media/cache/f9/33/f933f063bcd39f7dac54b23b4f7c04f5.webp" width="60" height="60" alt="Blender" Blender</li>
+                        <li>
+                            <p>Knife Set</p>
+                            <img src="https://m.media-amazon.com/images/I/71HHEMD6oHL._AC_SL1500_.jpg" width="60" height="60" alt="Knife-Set" Knife Set</li>
+                        <li>
+                            <p>Cutting Board</p>
+                            <img src="https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/63/9737661/1.jpg" width="60" height="60" alt="Cutting-Board" Cutting Board</li>
+                    </ul>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<form action="/submit-registration" method="post">
+    <fieldset>
+        <legend>Registration Form</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="johndoe@example.com"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Enter your password"><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+2547XXXXXXXX"><br><br>
+
+        <label for="product">Interested Product:</label>
+        <select id="product" name="product">
+            <option value="smartphone">Smartphone</option>
+            <option value="tablet">Tablet</option>
+            <option value="accessories">Accessories</option>
+        </select><br><br>
+
+        <label>
+            <input type="checkbox" name="newsletter" value="yes">
+            Subscribe to our newsletter
+        </label><br><br>
+
+        <input type="submit" value="Register">
+    </fieldset>
+</form>
+
